@@ -13,7 +13,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim='nvim'
-alias tree='exa --tree --level=2 --icons'
+alias tree='exa --tree --level=2 --icons -a'
 
 # Created by `pipx` on 2023-12-23 19:47:46
 export PATH="$PATH:/Users/ericclaflin/.local/bin"
