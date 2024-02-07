@@ -2,7 +2,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # oh-my-zsh configurations
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 echo $ZSH_THEME
 
 zstyle ':omz:update' mode reminder  # just remind me to update when it's time
