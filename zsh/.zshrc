@@ -17,3 +17,6 @@ alias tree='exa --tree --level=2 --icons -a'
 
 # Created by `pipx` on 2023-12-23 19:47:46
 export PATH="$PATH:/Users/ericclaflin/.local/bin"
+
+source vars.env
+export $(grep -v '^#' vars.env | xargs -I {} echo export '{}')
