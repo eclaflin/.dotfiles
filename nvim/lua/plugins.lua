@@ -44,6 +44,7 @@ require("lazy").setup({
                     "comment",
                     "dockerfile",
                     "markdown",
+                    "markdown_inline",
                     "python", 
                     "sql",
                     "yaml",
@@ -81,6 +82,30 @@ require("lazy").setup({
             })
 		end,
     },
+    {
+        "epwalsh/obsidian.nvim",
+        version = "*",  -- recommended, use latest release instead of latest commit
+        lazy = true,
+        ft = "markdown",
+        dependencies = {
+        -- Required.
+        "nvim-lua/plenary.nvim",
+        },
+        opts = {
+        workspaces = {
+          {
+            name = "some-new-beginnings",
+            path = "~/Documents/some-new-beginnings",
+          },
+        },
+
+        }, 
+    },
+    {
+        'nvim-telescope/telescope.nvim', tag = '0.1.6',
+        dependencies = { 'nvim-lua/plenary.nvim' }
+
+    }
 }) 
 
 
